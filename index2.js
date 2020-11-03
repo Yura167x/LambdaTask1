@@ -8,10 +8,9 @@ function recursive(chars, string = "", skip = 0, strings = []) {
     recursive(chars, next + ".", skip + 1, strings);
     recursive(chars, next, skip + 1, strings);
   }
-  console.clear();
-  console.log(strings);
   return strings;
 }
 
 let chars = "abc";
-recursive(chars);
+let cons = recursive(chars);
+console.log(cons);

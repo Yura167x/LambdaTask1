@@ -12,9 +12,9 @@ function generateStrings(string) {
       }
       strings[i] = mapped;
     }
-    console.log(strings);
     return strings;
 }
 
 let string = "abc";
-generateStrings(string);
+let cons = generateStrings(string);
+console.log(cons);
